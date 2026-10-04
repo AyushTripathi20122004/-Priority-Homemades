@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Vina+Sans&display=swap');
+
+*{
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* swipper css */
+.swiper-scrollbar {
+  display: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 3vw !important;
+  height: 3vw !important;
+  border-radius: 50%;
+  background: transparent;
+  color: white !important;
+  --swiper-navigation-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-navigation-icon{
+    height:2vw !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: white !important;
+}
