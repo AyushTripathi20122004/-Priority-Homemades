@@ -16,7 +16,7 @@ const App = () => {
   let Location = useLocation().pathname
   
   return (
-    <div className={`relative flex justify-between flex-col ${Location == '/' ? 'h-screen':'h-full'} `}>
+    <div className={`relative flex justify-between flex-col ${Location == '/' ? 'h-screen overflow-hidden':'h-full'} `}>
       <NavBar />
       <FullScrenNav />
       <Routes>
