@@ -76,12 +76,12 @@ const FullScrenNav = () => {
                 </div>
             </div>
 
-            <div ref={FullScreenNavRef} className='w-full absolute top-0'>
+            <div ref={FullScreenNavRef} className='w-full absolute flex flex-col justify-between h-screen top-0'>
 
-                <div className='flex justify-between items-start lg:mt-0 mt-[2vw]'>
-                    <Link onClick={() => { SetNav(false) }} to='/' className=' ml-[2vw] flex items-center gap-2 '>
+                <div className='flex justify-between items-start px-[2vw]  '>
+                    <Link onClick={() => { SetNav(false) }} to='/' className='flex lg:pt-0 pt-[2vw] items-center gap-2 '>
                         <div className='lg:h-[2.5vw] md:h-[2.5vw]  h-[4vw]  lg:w-[2.5vw] md:w-[2.5vw] w-[4vw] overflow-hidden  rounded-full'><img src="https://priorityhomemades.in/icon.jpg" alt="" srcSet="" /></div>
-                        <h1 className='lg:text-[2vw] md:text-[2vw] text-white text-[3vw] uppercase'>Priority-Homemades</h1>
+                        <h1 className='lg:text-[2vw] md:text-[2vw] text-white text-[4vw] uppercase'>Priority-Homemades</h1>
                     </Link>
                     <div onClick={() => { SetNav(false) }} className='h-[10vw] flex justify-between w-[15vw]  border-white'>
                         <div className='h-full w-[0.1vw] origin-top -rotate-45 translate-y-[2vw] translate-x-[4vw] bg-white'>
@@ -93,7 +93,7 @@ const FullScrenNav = () => {
                     </div>
                 </div>
 
-                <div className='NavigationLinks lg:mt-0 md:mt-[20vw] mt-[40vw]'>
+                <div className='NavigationLinks '>
                     {
                         NavRoutes.map((elem, idx) => {
                             return (
@@ -113,7 +113,7 @@ const FullScrenNav = () => {
                     }
                 </div>
 
-                <div className=' flex justify-between px-2 lg:mt-[8.9vw] md:mt-[25vw] mt-[70vw] '>
+                <div className=' flex justify-between px-2  '>
                     <div className='group'>
                         <div className='text-white lowercase lg:text-[2vw] text-[4vw]'>
                             PriorityHomemades@gmail.com

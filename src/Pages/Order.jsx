@@ -9,19 +9,19 @@ const Order = () => {
 
     const Orders = localStorage.getItem("OrdersData")
     const OrdersArray = JSON.parse(Orders)
-    console.log(OrdersArray)
+
     return (
-        <div className='h-full w-full lg:mt-[5vw] mt-[10vw] px-[2vw]'>
-            <div className='mb-[1vw]'>
-                <button onClick={() => { Navigate(-1) }} className='rounded-full flex lg:text-[1.5vw] items-center  px-[1vw] py-[0.5vw] gap-[0.5vw] border border-black/10 text-black hover:bg-black hover:text-white transition-all duration-200 hover:text-black'><MoveLeft size={'2vw'} />Back to Cakes</button>
+        <div className={` ${OrdersArray.length<=2 ? 'h-screen': 'h-full'}  w-full lg:mt-[5vw] mb-[10vw] lg:mt-[10vw] mt-[15vw] px-[2vw]`}>
+            <div className='lg:mb-[1vw] mb-[4vw]'>
+                <button onClick={() => { Navigate(-1) }} className='rounded-full flex lg:text-[1.5vw] items-center  px-[1vw] py-[0.5vw] gap-[0.5vw] border border-black/10 text-black hover:bg-black hover:text-white transition-all duration-200 hover:text-black'><MoveLeft size={'2vw'} />Back to Prev</button>
             </div>
 
             <div>
                 {
                     OrdersArray.map((elem, idx) => {
                         return (
-                            <div key={idx} className='lg:h-[10vw] rounded-lg hover:shadow-xs shadow-black/50 transition-all duration-300 hover:-translate-y-0.5 w-full bg-white/10 mb-[2vw] p-4 flex items-center gap-[1vw] border border-black/10 '>
-                                <div className='lg:h-[8vw] h-[13vw] w-[13vw] lg:w-[8vw] overflow-hidden'>
+                            <div key={idx} className='lg:h-[10vw] rounded-lg hover:shadow-xs shadow-black/50 transition-all duration-300 hover:-translate-y-0.5 w-full bg-white/10 mb-[2vw] p-4 flex  gap-[2vw] lg:gap-[1vw] border border-black/10 '>
+                                <div className='lg:h-[8vw]  w-[23vw] lg:w-[8vw] overflow-hidden'>
                                     <img className='h-full w-full object-cover' src={elem.cakeImage} alt="" srcset="" />
                                 </div>
                                 <div className='flex justify-between w-full'>
@@ -37,7 +37,7 @@ const Order = () => {
                                     <div className='flex items-end'>
                                         <span onClick={() => {
                                             localStorage.removeItem(Orders[idx])
-                                        }} className='border w-fit px-[1vw] py-[0.2vw] rounded-full hover:bg-black hover:text-white cursor-pointer'>
+                                        }} className='border w-fit text-nowrap px-[1vw] py-[0.2vw] rounded-full hover:bg-black hover:text-white cursor-pointer'>
                                             Order Cancel
                                         </span>
                                     </div>

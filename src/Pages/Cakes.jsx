@@ -20,8 +20,8 @@ const Cakes = () => {
 
     return (
         <div className='relative mb-[10vw]'>
-            <div className='px-[2vw]'>
-                <div className=' text-[7vw] uppercase mt-[8vw] font-semibold'>
+            <div className='lg:px-[2vw] px-[4vw]'>
+                <div className=' text-[7vw] uppercase lg:mt-[8vw] mt-[16vw] font-semibold'>
                     Expl0re Cak3s
                 </div>
 
