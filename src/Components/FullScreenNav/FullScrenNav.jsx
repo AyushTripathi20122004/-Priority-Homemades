@@ -56,7 +56,7 @@ const FullScrenNav = () => {
     }, [OpenNav])
 
     return (
-        <div className={` ${OpenNav == true ? 'block' : 'hidden'} fixed top-0 h-screen w-full z-999`}>
+        <div className={` ${OpenNav == true ? 'block' : 'hidden'} fixed top-0 h-full w-full z-999`}>
             {/* stairs for animation */}
             <div className=' h-screen   w-screen hidden  grid-rows-2  Stairparant2 '>
                 <div className='w-full h-full flex  '>

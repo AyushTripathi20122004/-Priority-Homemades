@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './Pages/Home'
 import Cakes from './Pages/Cakes'
 import NavBar from './Components/Navbar/NavBar'
@@ -13,8 +13,10 @@ import CakesForm from './Pages/CakesFormSection'
 import Order from './Pages/Order'
 
 const App = () => {
+  let Location = useLocation().pathname
+  
   return (
-    <div className='relative flex justify-between flex-col h-full'>
+    <div className={`relative flex justify-between flex-col ${Location == '/' ? 'h-screen':'h-full'} `}>
       <NavBar />
       <FullScrenNav />
       <Routes>
