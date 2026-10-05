@@ -13,7 +13,7 @@ const EmailForm = () => {
                     </p>
                 </div>
                 <form className='h-full border lg:border-r-0  flex flex-col'>
-                    <div className='flex lg:flex-row flex-col lg:h-[5vw]  '>
+                    <div className='flex lg:h-[5vw]  '>
                         
                         <input type="text" placeholder='Name' className='border-[0.1vw] px-[1vw] border-l-0 border-t-0 focus:outline-none  w-full lg:text-[1.7vw] text-[4vw] text-black/60   lg:py-[0.7vw] py-[1vw]' id="name" name="name" required />
                         

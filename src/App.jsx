@@ -14,7 +14,7 @@ import Order from './Pages/Order'
 
 const App = () => {
   return (
-    <div className='relative'>
+    <div className='relative flex justify-between flex-col h-full'>
       <NavBar />
       <FullScrenNav />
       <Routes>
