@@ -8,7 +8,7 @@ import Location from '../Components/AboutUS/Location'
 
 const AboutUs = () => {
   return (
-    <div className='px-[2vw] mb-[10vw]'>
+    <div className='lg:px-[2vw] px-[4vw] mb-[10vw]'>
       <Intro />
       <Qualities />
       <AbCakeVideo />
