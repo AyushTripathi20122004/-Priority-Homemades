@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div className="h-full relative  overflow-hidden  w-screen">
+        <div className="h-dvh relative  overflow-hidden  w-screen">
             <video loop autoPlay muted className="h-full scale-[115%] w-full object-cover "
                 src={HomeVideo}></video>
             <div className="absolute lg:block flex flex-col justify-between lg:h-full w-full lg:top-0 bottom-10 lg:gap-0 gap-[20vw]">
