@@ -7,7 +7,7 @@ const Home = () => {
         <div className="h-full relative  overflow-hidden  w-screen">
             <video loop autoPlay muted className="h-full scale-[115%] w-full object-cover "
                 src={HomeVideo}></video>
-            <div className="absolute lg:block flex flex-col justify-between lg:h-full w-full lg:top-0 bottom-4 lg:gap-0 gap-[20vw]">
+            <div className="absolute lg:block flex flex-col justify-between lg:h-full w-full lg:top-0 bottom-10 lg:gap-0 gap-[20vw]">
                 <div className="w-full flex justify-center  lg:mt-[6vw] md:mt-[40vw] ">
                     <h1 className="text-white text-center font-medium lg:w-[80vw] lg:leading-[9vw] leading-[15vw] text-[15vw]  lg:text-[10vw] uppercase mix-blend-difference">Sw33tness Reim4gin3d</h1>
                 </div>

@@ -56,9 +56,9 @@ const FullScrenNav = () => {
     }, [OpenNav])
 
     return (
-        <div className={` ${OpenNav == true ? 'block' : 'hidden'} fixed top-0 h-full w-full z-999`}>
+        <div className={` ${OpenNav == true ? 'block' : 'hidden'} fixed top-0 h-dvh w-screen z-999`}>
             {/* stairs for animation */}
-            <div className=' h-screen   w-screen hidden  grid-rows-2  Stairparant2 '>
+            <div className=' h-screen   w-full hidden  grid-rows-2  Stairparant2 '>
                 <div className='w-full h-full flex  '>
                     <div className='w-full upStair1 bg-black h-full'></div>
                     <div className='w-full upStair1 bg-black h-full'></div>
@@ -76,7 +76,7 @@ const FullScrenNav = () => {
                 </div>
             </div>
 
-            <div ref={FullScreenNavRef} className='w-full absolute flex flex-col justify-between h-screen top-0'>
+            <div ref={FullScreenNavRef} className='w-full absolute flex flex-col justify-between h-full top-0'>
 
                 <div className='flex justify-between items-start px-[2vw]  '>
                     <Link onClick={() => { SetNav(false) }} to='/' className='flex lg:pt-0 pt-[2vw] items-center gap-2 '>
