@@ -11,12 +11,17 @@ import ContactUs from './Pages/ContactUs'
 import Review from './Pages/Review'
 import CakesForm from './Pages/CakesFormSection'
 import Order from './Pages/Order'
+import { ReactLenis} from 'lenis/react'
+
 
 const App = () => {
   let Location = useLocation().pathname
   
   return (
+    <>
+    <ReactLenis root />
     <div className={`relative flex justify-between flex-col h-full `}>
+      
       <NavBar />
       <FullScrenNav />
       <Routes>
@@ -30,7 +35,9 @@ const App = () => {
       </Routes>
 
       <Footer />
+      
     </div>
+    </>
   )
 }
 

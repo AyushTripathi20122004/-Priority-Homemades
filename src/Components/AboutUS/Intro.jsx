@@ -13,16 +13,16 @@ const Intro = () => {
                 markers: false,
                 start: 'top top',
                 end: 'bottom top',
-                scrub: true,
+                scrub: 2,
             }
         })
         tl.to('.OwnerImg1', {
-            y: 27,
+            y: 37,
             ease: 'none',
         },'start')
 
         tl.to('.OwnerImg2', {
-            y: 35,
+            y: 45,
             ease: 'none',
         },'start')
     })

@@ -18,7 +18,7 @@ const BakingAcc = () => {
                     markers: false,
                     start: 'top 100%',
                     end: 'bottom top',
-                    scrub: true,
+                    scrub: 2,
                 }
             })
         })
