@@ -29,10 +29,10 @@ const Intro = () => {
     return (
         <div className=" grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 IntroParant items-center gap-10  py-16 ">
             <div className=" flex flex-col justify-center mt-[6vw] gap-[2vw]">
-                <h1 className="lg:text-[7vw] text-[17vw] lg:leading-[6vw] leading-[14vw]   text-gray-900">
+                <h1 className="lg:text-[7vw] text-[17vw] lg:leading-[6vw] leading-[15vw]   text-gray-900">
                     Our Journey & Inspiration
                 </h1>
-                <p className="lg:w-[34vw]  lg:mt-[2vw] mt-[4vw] flex flex-col gap-[0.5vw] lg:text-[1.25vw] text-[3vw] lg:leading-[2vw] leading-[3.5vw] text-black/80">
+                <p className="lg:w-[34vw]  lg:mt-[2vw]  mt-[4vw] flex flex-col gap-[0.5vw] lg:text-[1.25vw] text-[3vw] lg:leading-[2vw] leading-[3.5vw] text-black/80">
                     <span> Priority Homemades was born from a love for authentic, oven-fresh baking in the hills of Solan, Himachal Pradesh.</span>
                     <span>Our motto is simple: “Meri Kitchen Se” — straight from my kitchen to yours.</span>
                     <span>Every cake is freshly baked to order using wholesome ingredients, premium butter, real chocolate, and seasonal flavours. From birthdays and anniversaries to weddings and celebrations, we put heart into every creation.</span>

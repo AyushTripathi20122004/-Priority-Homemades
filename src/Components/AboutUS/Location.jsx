@@ -1,32 +1,50 @@
 import React from "react";
 import { MapPin, Mail, Clock } from "lucide-react";
 const Location = () => {
+
+    const LocationData = [
+        {
+            icon: MapPin,
+            label: "Address",
+            value: "Priority Homemades, Solan, Himachal Pradesh 173212",
+        },
+        {
+            icon: Mail,
+            label: "Email",
+            value: "priorityhomemades@gmail.com",
+        },
+        {
+            icon: Clock,
+            label: "Business Hours",
+            value: "8:00 AM – 8:00 PM",
+        },
+    ];
+
     return (
         <div className="lg:grid lg:grid-cols-2 lg:h-[40vw]  mt-[13vw]  ">
-            <div className="lg:border lg:border-l-0 lg:border-r-0 lg:block flex lg:mb-0 mb-[5vw] ">
+            <div className="lg:border lg:border-l-0 lg:border-r-0   lg:mb-0 mb-[5vw] ">
                 <div>
-                    <h1 className="text-[7vw] leading-[8vw]">Live Location</h1>
-                    <p className="text-[1.25vw] w-[35vw] mt-[2vw] text-black/60 leading-[2.2vw] ">
+                    <h1 className="lg:text-[7vw] text-[14vw] lg:leading-[8vw] leading-[12vw]">Live Location</h1>
+
+                </div>
+                <div className="flex flex-col lg:mt-0 mt-[8vw] lg:justify-between items-start">
+                    <p className="lg:text-[1.25vw] text-[3vw] lg:w-[35vw]  text-black/60 lg:leading-[2.2vw] leading-[3.5vw] ">
                         Step into our little corner in Solan, Himachal Pradesh, where every creation is freshly made with care, warmth, and a homemade touch. Wondering where the magic happens?
                     </p>
-                </div>
-                <div className=" mt-[10vw] space-y-[0.7vw] text-[1.1vw] text-black/70">
-                    <div className="flex items-center gap-[0.7vw]  pb-[0.7vw]">
-                        <MapPin className="w-[1.2vw] h-[1.2vw] text-black/50" />
-                        <span className="text-black">Address:</span>
-                        <span>Priority Homemades, Solan, Himachal Pradesh 173212</span>
-                    </div>
-
-                    <div className="flex items-center gap-[0.7vw]  pb-[0.7vw]">
-                        <Mail className="w-[1.2vw] h-[1.2vw] text-black/50" />
-                        <span className="text-black">Email:</span>
-                        <span>priorityhomemades@gmail.com</span>
-                    </div>
-
-                    <div className="flex items-center gap-[0.7vw]">
-                        <Clock className="w-[1.2vw] h-[1.2vw] text-black/50" />
-                        <span className="text-black">Business Hours:</span>
-                        <span>8:00 AM – 8:00 PM</span>
+                    <div className="space-y-[0.7vw] lg:text-[1.1vw] lg:mt-[10vw] mt-[4vw] text-[3vw] text-black/70">
+                        {
+                            LocationData.map((elem, idx) => {
+                                return (
+                                    <div key={idx} className="flex  items-center gap-[0.8vw]  pb-[0.7vw]">
+                                        <elem.icon className="lg:w-[1.2vw] w-[3vw] h-[3vw] lg:h-[1.2vw] text-black/50" />
+                                        <div className="flex items-center">
+                                            <span className="text-black">{elem.label}:</span>
+                                            <span className="pl-[0.8vw] lg:pl-[0.2vw]">{elem.value}</span>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
 

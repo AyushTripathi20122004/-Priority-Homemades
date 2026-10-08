@@ -25,13 +25,13 @@ const BakingAcc = () => {
 return (
     <div className=" mt-[12vw] w-full py-0.5 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 gap-[4vw] lg:h-screen CourseParant lg:items-center justify-between ">
         <div className=" mt-[10vw]">
-            <h1 className=" text-[7vw] leading-[8vw] ">Priority Baking Academy</h1>
-            <p className="text-[1.25vw] mt-[2vw] text-black/60 leading-[2.2vw] ">
+            <h1 className=" lg:text-[7vw] text-[17vw] lg:leading-[8vw] leading-[15vw] ">Baking Academy</h1>
+            <p className="lg:text-[1.25vw] text-[3vw] lg:mt-[2vw] mt-[4vw] text-black/60 lg:leading-[2vw] leading-[3.5vw] ">
                 At Priority Baking Academy, Meenakshi shares her trade secrets and step-by-step techniques with baking enthusiasts, homemakers, and future entrepreneurs. From understanding oven thermodynamics and balancing sponge moistness to perfecting sharp edges with whipped cream and fondant sculpting, our masterclasses provide complete hands-on practical training.
 
                 Classes are held at our Solan studio with small batch sizes to ensure individual attention and hands-on participation.
             </p>
-            <button className="px-[4vw] hover:bg-black hover:text-white transition-all duration-200 py-[1vw] text-[1.25vw] mt-[6vw]  rounded-full border ">
+            <button className="px-[4vw] hover:bg-black hover:text-white transition-all duration-200 lg:py-[1vw] py-[1.5vw] text-[3vw] lg:text-[1.25vw] mt-[6vw]  rounded-full border ">
                 Explore Masterclasses & Courses
             </button>
         </div>
