@@ -18,12 +18,12 @@ const BakingAcc = () => {
                     markers: false,
                     start: 'top 100%',
                     end: 'bottom top',
-                    scrub: 2,
+                    scrub: true,
                 }
             })
         })
 return (
-    <div className=" mt-[12vw] w-full py-0.5 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 gap-[4vw] lg:h-screen CourseParant lg:items-center justify-between ">
+    <div className=" mt-[12vw] w-full py-0.5 lg:grid lg:grid-cols-2 gap-[4vw] lg:h-screen CourseParant lg:items-center justify-between ">
         <div className=" mt-[10vw]">
             <h1 className=" lg:text-[7vw] text-[17vw] lg:leading-[8vw] leading-[15vw] ">Baking Academy</h1>
             <p className="lg:text-[1.25vw] text-[3vw] lg:mt-[2vw] mt-[4vw] text-black/60 lg:leading-[2vw] leading-[3.5vw] ">

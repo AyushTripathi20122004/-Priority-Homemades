@@ -13,7 +13,7 @@ const Intro = () => {
                 markers: false,
                 start: 'top top',
                 end: 'bottom top',
-                scrub: 2,
+                scrub: true,
             }
         })
         tl.to('.OwnerImg1', {
@@ -29,7 +29,7 @@ const Intro = () => {
     return (
         <div className=" grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 IntroParant items-center gap-10  py-16 ">
             <div className=" flex flex-col justify-center mt-[6vw] gap-[2vw]">
-                <h1 className="lg:text-[7vw] text-[17vw] lg:leading-[6vw] leading-[15vw]   text-gray-900">
+                <h1 className="lg:text-[7vw] text-[17vw] lg:leading-[6vw] leading-[16vw]   text-gray-900">
                     Our Journey & Inspiration
                 </h1>
                 <p className="lg:w-[34vw]  lg:mt-[2vw]  mt-[4vw] flex flex-col gap-[0.5vw] lg:text-[1.25vw] text-[3vw] lg:leading-[2vw] leading-[3.5vw] text-black/80">
